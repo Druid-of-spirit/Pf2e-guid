@@ -1,0 +1,34 @@
+{
+  "name": "PF2eScreen",
+  "title": "PF2e Справочник",
+  "description": "Справочник",
+  "author": "My",
+  "authors": [],
+  "url": "",
+  "readme": "",
+  "flags": {},
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "0.9.0",
+  "scripts": [],
+  "esmodules": [],
+  "styles": [],
+  "languages": [],
+  "packs": [
+    {
+      "label": "PF2e Справочник",
+      "entity": "JournalEntry",
+      "name": "screen",
+      "path": "packs/lib.json",
+      "module": "PF2eScreen",
+      "private": false
+    }
+  ],
+  "system": [
+    "pf2e"
+  ],
+  "dependencies": [],
+  "socket": false,
+  "manifest": "https://www.dropbox.com/s/v58jypm7rc5o2sd/modules.json?dl=0",
+  "coreTranslation": false
+}

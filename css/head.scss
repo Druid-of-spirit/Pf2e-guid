@@ -1,0 +1,130 @@
+@font-face {
+	font-family: 'GentiumBookPlus-Regular';
+	src: url('fonts/GentiumBookPlus-Regular.eot');
+	src: local('☺'), url('fonts/GentiumBookPlus-Regular.woff') format('woff'), url('fonts/GentiumBookPlus-Regular.ttf') format('truetype'), url('fonts/GentiumBookPlus-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GentiumBookPlus-Italic';
+	src: url('fonts/GentiumBookPlus-Italic.eot');
+	src: local('☺'), url('fonts/GentiumBookPlus-Italic.woff') format('woff'), url('fonts/GentiumBookPlus-Italic.ttf') format('truetype'), url('fonts/GentiumBookPlus-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Oswald-Regular';
+	src: url('fonts/Oswald-Regular.eot');
+	src: local('☺'), url('fonts/Oswald-Regular.woff') format('woff'), url('fonts/Oswald-Regular.ttf') format('truetype'), url('fonts/Oswald-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Oswald-ExtraLight';
+	src: url('fonts/Oswald-ExtraLight.eot');
+	src: local('☺'), url('fonts/Oswald-ExtraLight.woff') format('woff'), url('fonts/Oswald-ExtraLight.ttf') format('truetype'), url('fonts/Oswald-ExtraLight.svg') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Oswald-Bold';
+	src: url('fonts/Oswald-Bold.eot');
+	src: local('☺'), url('fonts/Oswald-Bold.woff') format('woff'), url('fonts/Oswald-Bold.ttf') format('truetype'), url('fonts/Oswald-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@import "null/null-style.scss";
+
+//Шаблоны
+$em-size: 1em;
+$bg-color: #E3A31E;
+$min-width: 160px;
+
+//Тело
+body {
+    background-color: #222426;
+    font-size: 20px;
+}
+
+//Текст
+p  {
+    font-family: 'GentiumBookPlus-Regular'; //Параметры обычного тектса
+    font-size: $em-size/1.25; //16px
+    color: white; 
+    
+    
+}
+h1 {
+    
+    font-family: 'GentiumBookPlus-Regular'; //Параметры оглавлений выпадающего меню
+    font-size:  $em-size;
+    font-weight: bold;
+    color: #2D0605;
+}
+h2 {
+    font-family: 'GentiumBookPlus-Regular'; //Параметры оглавлений выпадающих меню
+    font-size: $em-size/1.11; //18px
+    font-weight: normal;
+    color: #2D0605;
+}
+h3 {   
+    font-family: 'GentiumBookPlus-Regular'; //Заголовок перед текстом 
+    font-size: $em-size*1.2; //24px
+    font-weight: normal;
+    color: white;
+}
+h4 {
+    font-family: 'Oswald-Regular';
+    font-size: $em-size*1.4; //28px
+    color: white;
+    
+}
+
+span {
+    color: $bg-color;
+}
+
+::placeholder { //Задаёт стиль теста всем тэгам input
+    font-family: 'Gentium Book Plus'; //Заголовок перед текстом 
+    font-size: $em-size;
+    font-weight: normal;
+    color: white;
+}
+
+
+//ОСНОВА
+.wrapper {
+    min-height: 100%; //!!!Проверить на заполнаненной странице.
+    overflow: hidden; //При адаптация на телефоны, лечит баг с head и footer(полностью растягивает полосы и не срезает их)
+    
+}
+
+.container {
+    max-width: 1180px; //Ограничение пространства
+    margin: 0 auto; //Центрирование блоков
+}
+
+
+
+//АДАПТАЦИЯ
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 820px) {
+
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+
+}

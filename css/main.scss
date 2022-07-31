@@ -1,0 +1,83 @@
+@import "null/null-style.scss";
+
+//БЛОКИ
+
+
+.content {
+    padding: 20px 0 0 0;
+}
+.content__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $em-size/1.4 $em-size/1.4; //~14px
+    border-radius: 15px;
+    
+    
+}
+.content__box {
+    flex: 1 1 20%;
+    border-radius: 15px;
+    /*box-shadow: none;*/
+    
+    a >:hover {
+        background-color: hsl(200, 6%, 18%); //Подсветка кнопки-меню
+    }
+    
+
+}
+.conten__item {
+    border: $bg-color solid 4px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    height: $em-size*4.5; //90px
+    min-width: 275px; //Непозволяет блоку уменшаться при адаптации, благодаря этому блоки в строке всегда будут равного размера
+    
+    
+    img { //Является flex-элементом;
+        margin: 0 0 0 15px;
+        width: $em-size*2; //40px
+        max-width: 50px; //Не позволяет изображению увеличиваться больше заданного размера
+    }
+    p { //Является flex-элементом
+        margin: 0 0 0 10px;
+        
+    }
+}
+
+.dividing__line {
+    margin: 30px 0 20px 0px; //Разделительная линия между блоками и тестом
+    border-top: $bg-color solid 4px;
+
+}
+
+
+
+//АДАПТАЦИЯ
+
+@media (max-width: 1024px) {
+    .content__row {
+        gap: $em-size/2 $em-size/2; //10px
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    .dividing__line {
+        margin: 20px 0 15px 0px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .content__row {
+        gap: $em-size/3 $em-size/3; //~7px
+    }
+}
+
+
+
+
+
+
