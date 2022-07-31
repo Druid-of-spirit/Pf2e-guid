@@ -29,6 +29,7 @@
   ],
   "dependencies": [],
   "socket": false,
-  "manifest": "https://www.dropbox.com/s/v58jypm7rc5o2sd/modules.json?dl=0",
+  "manifest": "https://github.com/Druid-of-spirit/Pf2e-guid/blob/main/module.json",
+  "download": "https://github.com/Druid-of-spirit/Pf2e-guid/archive/refs/heads/main.zip",
   "coreTranslation": false
 }
